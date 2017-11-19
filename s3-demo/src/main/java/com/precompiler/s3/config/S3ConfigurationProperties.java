@@ -13,10 +13,10 @@ import lombok.ToString;
 @Setter
 @ToString
 public class S3ConfigurationProperties {
-	@NotNull
-	private String roleArn;
-	@NotNull
-	private String roleSessionName;
+	// @NotNull
+	// private String roleArn;
+	// @NotNull
+	// private String roleSessionName;
 	@NotNull
 	private String region;
 }
