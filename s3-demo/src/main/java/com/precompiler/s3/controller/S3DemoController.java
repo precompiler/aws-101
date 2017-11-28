@@ -44,4 +44,15 @@ public class S3DemoController {
 			return new ResponseEntity<>(new ListBucketsResponse(buckets), HttpStatus.OK);
 		}
 	}
+
+	/**
+	 * Health check.
+	 * 
+	 * @return
+	 */
+	@RequestMapping(path = "/healthCheck", method = RequestMethod.GET)
+	public ResponseEntity<Void> healthCheck() {
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
+
 }
